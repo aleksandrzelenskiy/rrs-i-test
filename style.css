@@ -1,0 +1,135 @@
+/* Стили для страницы */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+#timer {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#answers {
+  list-style-type: none;
+  padding: 0;
+}
+
+#answers li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#answers li:hover {
+  background: #eaeaea;
+}
+
+#answers li.selected {
+  background: #007bff;
+  color: white;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+#progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progress {
+  width: 0;
+  height: 100%;
+  background-color: #76c7c0;
+  transition: width 0.3s ease;
+}
+
+#result-box {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.incorrect-answer {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.incorrect-answer p {
+  margin: 5px 0;
+}
+
+.incorrect-answer strong {
+  font-weight: bold;
+}
+
+.incorrect-answer .wrong {
+  background-color: #ff0;
+  color: #000;
+}
+
+.incorrect-answer .correct {
+  background-color: #06d239;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
